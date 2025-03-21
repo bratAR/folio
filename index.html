@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Aditya Rauniyar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #311010;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+
+        .container{
+            padding: 20px;
+            
+        }
+
+        .container{
+            padding: 20px;
+            position: relative;
+            height: 20vh;
+        }
+
+        .container img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .about, .skills, .projects, .contact {
+            text-align:center;
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-family: 'times new roman',serif;
+            font-weight: bold;
+
+        }
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            
+        }
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0
+        }
+        .skills li, .projects li {
+            background-color: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+           
+            color:"black";
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aditya Rauniyar</h1>
+        <p>Web Developer | Entrepreneur | Learner</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="con">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="container">
+            <img src="me.jpg" width="400px" height="500px"alt="Adi">
+        </div>
+            <p>Hello! I'm Aditya, a passionate web developer with experience in creating dynamic and user-friendly websites.
+                <br> I love coding and design, and I enjoy working on projects that challenge me to learn new technologies.
+                <br> I actively assist in managing and growing my family's business, contributing to various aspects of its operations and success.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Weather app</h3>
+                    <p>A weather app using html named HawaPani.</p>
+                    <a href="https://github.com/bratAR/weather-app" target="_blank">View on GitHub</a>
+                </li>
+                <li>
+                    <h3>Random Password Generator</h3>
+                    <p>A site that generates safe password for your account.</p>
+                    <a href="https://github.com/bratAR/random-password-generator" target="_blank">View on GitHub</a>
+                </li>
+            </ul>
+        </section>
+        <div>
+            <img src="hehe.jpg" width="500px" height="300px"alt="Adi">
+        </div>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to email me or connect with me on LinkedIn.</p>
+            <ul>
+                <li>Email: <a href="mailto:adityarauniyar65gmail.com">adityarauniyar65gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/aditya-shah-781a02346/" target="_blank">aditya-shah-781a02346</a></li>
+                <li>GitHub: <a href="https://github.com/bratAR" target="_blank">github.com/bratAR</a></li>
+            </ul>
+        </section>
+    </div>
+   
+
+  <footer>
+        <p>&copy; 2002 Aditya Rauniyar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
