@@ -1,4 +1,94 @@
 body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #311010;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+
+        .container{
+            padding: 20px;
+            
+        }
+
+        .container{
+            padding: 20px;
+            position: relative;
+            height: 20vh;
+        }
+
+        .container img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .about, .skills, .projects, .contact {
+            text-align:center;
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-family: 'times new roman',serif;
+            font-weight: bold;
+
+        }
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            
+        }
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0
+        }
+        .skills li, .projects li {
+            background-color: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+           
+            color:"black";
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+        }
+body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
@@ -8,7 +98,7 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
-   /* hidden by default */
+  display: none; /* hidden by default */
   background-color: #333;
   color: white;
   border: none;
@@ -22,4 +112,43 @@ body {
 
 #scrollTopBtn:hover {
   background-color: #555;
+}
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+#openModalBtn:hover {
+  background-color: #444;
 }

@@ -6,99 +6,6 @@
     <meta name="author" content="Your Name">
     <title>Aditya Rauniyar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #311010;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #333;
-        }
-
-        .container{
-            padding: 20px;
-            
-        }
-
-        .container{
-            padding: 20px;
-            position: relative;
-            height: 20vh;
-        }
-
-        .container img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .about, .skills, .projects, .contact {
-            text-align:center;
-            margin-bottom: 40px;
-            font-size: 18px;
-            font-family: 'times new roman',serif;
-            font-weight: bold;
-
-        }
-        .about img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            
-        }
-        .skills ul, .projects ul {
-            list-style-type: none;
-            padding: 0
-        }
-        .skills li, .projects li {
-            background-color: #ddd;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        footer {
-           
-            color:"black";
-            color: #fff;
-            text-align: center;
-            padding: 0px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            height: 50%;
-        }
-    </style>
 </head>
 <body>
 
@@ -177,6 +84,21 @@
                 LinkedIn: <a href="https://www.linkedin.com/in/aditya-shah-781a02346/" target="_blank">aditya-shah-781a02346</a><br>
                 GitHub: <a href="https://github.com/bratAR" target="_blank">github.com/bratAR</a>
             </ul>
+
+<button id="openModalBtn">Open Modal</button>
+
+<div id="modal" class="modal" >
+  <div class="modal-content">
+    <span class="close-btn" id="closeModalBtn">&times;</span>
+    <h2>Hello and Welcome to my portfolio!</h2>
+    <p>Have you followed janaki verity on instagram? If not please do it from here<br>
+        <a href="https://www.instagram.com/janaki_verity/">janaki_verity</a>
+        <br>Janaki Verity is a wholesale and retail business that specializes in providing a wide range of cosmetics, beauty products, and personal care items.
+        <br>We are committed to delivering high-quality products at competitive prices.
+        <br>Thanks for visiting!</p>
+  </div>
+</div>
+
             
         <button id="scrollTopBtn">Back to Top</button>
         </section>
