@@ -72,12 +72,9 @@ body {
             border-radius: 5px;
         }
         footer {
-           
-            color:"black";
-            color: #fff;
             text-align: center;
             padding: 0px;
-            position: fixed;
+            
             width: 100%;
             bottom: 0;
         }
@@ -152,3 +149,38 @@ body {
 #openModalBtn:hover {
   background-color: #444;
 }
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark-mode nav {
+  background-color: #222;
+}
+
+body.dark-mode nav a {
+  color: #ddd;
+}
+
+body.dark-mode nav a:hover {
+  background-color: #333;
+}
+
+body.dark-mode .skills li,
+body.dark-mode .projects li {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+body.dark-mode footer {
+  background-color: #1a1a1a;
+}
+
