@@ -37,7 +37,7 @@ scrollBtn.addEventListener("click", () => {
 darkToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
-  // Optional: Save preference to localStorage
+
   if (document.body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
   } else {
@@ -45,7 +45,7 @@ darkToggle.addEventListener("click", () => {
   }
 });
 
-// Load saved preference on page load
+
 window.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
